@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a movie app backed by OMDB api, Motive of this project is to create a scalable react architecture.
 
 ## Available Scripts
 
