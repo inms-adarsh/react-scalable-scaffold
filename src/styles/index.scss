@@ -1,0 +1,115 @@
+
+* {
+    outline: none;
+}
+
+html {
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.4;
+    background: #fff;
+}
+
+h1, .h1 {
+    font-size: 24px;
+}
+
+h2, .h2 {
+    font-size: 20px;
+}
+
+h3, .h3 {
+    font-size: 16px;
+}
+
+h4, .h4 {
+    font-size: 15px;
+}
+
+h5, .h5 {
+    font-size: 13px;
+}
+
+h6, .h6 {
+    font-size: 12px;
+}
+
+input, select {
+    font-size: 19px;
+    padding: 0 20px;
+    border-color: #dce0e0;
+    vertical-align: middle;
+    padding: 15px;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+    border: 1px solid #aaa;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-color: #fff;
+    color: #484848;
+
+    &:focus {
+        border-color: rgb(0, 132, 137);
+        outline: none;
+    }
+}
+
+label {
+    display: block;
+    padding-top: 9px;
+    padding-bottom: 8px;
+    font-size: 19px;
+}
+
+button {
+    display: inline-block;
+    margin: 0px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s ease-out;
+    width: auto;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: normal;
+    padding: 10px 22px;
+    font-weight: 700;
+    border: 2px solid transparent;
+    min-width: 72px;
+    box-shadow: none;
+    background: #005089;
+    color: #ffffff;
+}
+
+.card {
+    box-shadow: none;
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    margin-top: 1rem;
+    .card-block, .card-footer, .card-header {
+        padding: .5rem .75rem;
+    }
+    .card-header {
+        font-size: 24px !important;
+        font-weight: 800 !important;
+        line-height: 1.25em !important;
+        color: #484848 !important;
+        padding-top: 2px !important;
+        padding-bottom: 2px !important;
+    }
+    .card-img {
+        >img {
+            height: 220px;
+            width: 100%;
+            max-width: 100%;
+            border-radius: 2px;
+        }
+    }
+}

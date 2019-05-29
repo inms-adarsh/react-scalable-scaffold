@@ -1,0 +1,14 @@
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .login-card {
+        max-width: 300px
+    }
+
+    .error {
+        color: red;
+    }
+}

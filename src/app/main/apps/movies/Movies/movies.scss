@@ -1,0 +1,65 @@
+.movies {
+    .movies-list {
+        display: grid;
+        grid-gap: 0 20px;
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+        
+        .card {
+            transition: transform .3s;  
+            .title {
+                font-size: 12px;
+                font-weight: 800;
+                text-transform: uppercase;
+                color: rgb(118, 118, 118);
+            }
+            .year {
+                font-size: 14px;
+                font-weight: 400;
+            }
+
+            &:hover {
+                transition: transform .3s;
+                transform: scale(1.1);
+            }
+        }
+
+    }
+    
+    .toolbar {
+        border-bottom: 1px solid rgb(228, 228, 228);
+        background: #fff;
+        padding: 10px 22px;
+        display: flex;
+        .searchInput {
+            flex: 1;
+        }
+    }
+
+    @media (min-width: 1128px) {
+        .movies-list {
+            padding-left:80px;
+            padding-right: 80px;
+            display: grid;
+            grid-gap: 0 20px;
+            grid-template-columns: repeat(6, minmax(100px, 1fr));
+        }
+
+        .toolbar {
+            padding: 10px 80px;
+        }
+    }
+    @media (min-width: 1440px) {
+        .movies-list {
+            display: grid;
+            grid-gap: 0 20px;
+            grid-template-columns: repeat(6, minmax(100px, 1fr));
+        }
+    }
+
+    .no-movies {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+}
