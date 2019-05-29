@@ -1,4 +1,5 @@
 This project is a movie app backed by OMDB api, Motive of this project is to create a scalable react architecture.
+Try login using your own Omdb key at [omdb](http://www.omdbapi.com/apikey.aspx);
 
 ## Available Scripts
 
