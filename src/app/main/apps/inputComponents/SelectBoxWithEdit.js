@@ -1,5 +1,6 @@
 import React from 'react';
 import {SelectField, IconButton} from 'evergreen-ui';
+import Edit from './EditButton';
 import './inputComponents.scss';
 
 const SelectBoxWithEdit = (props) => {
@@ -14,7 +15,7 @@ const SelectBoxWithEdit = (props) => {
             >
                 {props.data.loadData.map((val, key) => <option value={val}> {val}</option>)}
             </SelectField> 
-            <IconButton icon="plus" height={24} className="editBtn" onClick={() => console.log('yj clicked')} />
+            {props.data.isEditButtonRequired ? <Edit editButtonInfo={props.data.editButtonHandler} /> : null}
         </div>
     )
 }
