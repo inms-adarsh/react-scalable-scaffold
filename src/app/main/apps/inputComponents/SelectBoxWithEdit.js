@@ -7,7 +7,8 @@ const SelectBoxWithEdit = (props) => {
     return (
         <div className="selecBoxStyle">
             <SelectField
-                width={200}
+                // width= {props.data.width}
+                width ={200}
                 className="selectBoxField"
                 label={props.data.label}
                 value="Select Load"
