@@ -1,69 +1,81 @@
-This project is a movie app backed by OMDB api, Motive of this project is to create a scalable react architecture.
-Try login using your own Omdb key at [omdb](http://www.omdbapi.com/apikey.aspx);
+1. Company Settings
+2. Create Dispatch
+3. Track Dispatch
+4. Accounting
+5. Map Tracking
 
-## Available Scripts
+Reusable Components
+1. Get Customers Dropdown
+2. Get Contacts Dropdown
+3. Get Locations Dropdown
+4. Get State Dropdown
+5. Weight Units
+5. Type of Fees
+6. Type of Expenses
+7. Dispatch Tracking Panel
+8. Get Drivers dropdown
+9. Get careers dropdown
+10. Keyboard Accessibility
 
-In the project directory, you can run:
+Validated Inputs
+1. Date and time / Date
+2. Phone number (Extension not required)
+3. Email
+4. Amount
+5. Percentage
+6. Google Address
 
-### `npm start`
+Modals
+1. Add Customer
+2. Add Contact
+3. Add Driver
+4. Add Container
+5. Add Check call
+6. Add Expense
+7. Add Location
+8. Add Payment
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Functional Components
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 
-### `npm test`
+Create Dispatch
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Add Customer (Carrier/Broker/Customer)
+2. Add Shipper (Multiple)
+3. Add Consignee
+4. Add Line Items
+5. Charges Calculation
+6. Assign Driver
+7. Assign Carrier and Trailer
 
-### `npm run build`
+Track Dispatch
+1. Check Calculation
+2. Mark Delivery
+3. Generate invoice
+4. Finalize invoice
+5. Expense Calculation
+6. Driver Payments
+7. Bill of Delivery
+8. Get Payment 
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Accounting
+1. Receive Payment
+2. Payment
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Routes
+1. Login/Signup
+2. Forgot Password
+3. Dashboard 
+4. Add Dispatch
+5. Add Load
+6. Drivers/Customers/Carriers/Locations
+7. Company Settings -> 
+    a. Company Details
+    b. Preferences
+        1. Dispatch
+        2. Invoice Pref
+        3. Load Pref
+        4. Accounting Pref
+        5. Language
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+8. Map Tracking
