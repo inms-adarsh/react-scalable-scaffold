@@ -7,6 +7,7 @@ import * as Actions from '../store/actions';
 import reducer from '../store/reducers';
 import MovieCard from './MovieCard'
 import history from 'history.js';
+import { TextInputField, SearchInput } from 'evergreen-ui';
 
 import './movies.scss';
 
@@ -45,7 +46,13 @@ class MoviesList extends Component {
 
         return (
             <div className="movies">
-
+                <SearchInput
+                    isInvalid={false}
+                    required
+                    label="A required text input field"
+                    description="This is a description."
+                    validationMessage="This field is required"
+                    />
                 <div className="toolbar">
                     <div class="searchInput">
                         <input
