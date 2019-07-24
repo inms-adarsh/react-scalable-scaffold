@@ -1,12 +1,28 @@
 import React from 'react';
-import {Textarea} from 'evergreen-ui';
+import {withFormsy} from 'formsy-react';
+import {Textarea, Pane ,Label} from 'evergreen-ui';
 
-const TextArea = () => {
+const TextArea = (props) => {
+    const textAreaHandler = (event) => {
+        props.setValue(event.target.value)
+    }
     return (
-        <Textarea 
-            name="Textarea-1"
-        />
+        <Pane>
+            <Label
+                htmlFor="textarea-2"
+                marginBottom={4}
+                display="block"
+            >
+                {props.label}
+            </Label>
+            <Textarea
+                name="Textarea-1"
+                width={200} //should be dynamic adjusted with props
+                onChange={textAreaHandler}
+                value={props.getValue() || ''}
+            />
+        </Pane>
     )
 }
 
-export default TextArea;
+export default withFormsy(TextArea);

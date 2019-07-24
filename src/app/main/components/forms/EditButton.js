@@ -4,7 +4,7 @@ import './inputComponents.scss';
 
 const Edit = (props) => {
     return (
-        <IconButton icon="plus" height={24} className="editBtn" onClick={props.editButtonInfo.editClickHandler}/>
+        <IconButton icon="plus" height={24} className="editBtn" onClick={()=> props.input.onChange(props.editButtonInfo)}/>
     )
 }
 
