@@ -1,6 +1,6 @@
 import React from 'react';
 import {withFormsy} from 'formsy-react';
-import {Combobox} from 'evergreen-ui';
+import {Combobox, FormField} from 'evergreen-ui';
 import './inputComponents.scss';
 
 const SelectBox = (props) => {
@@ -10,12 +10,13 @@ const SelectBox = (props) => {
       }
     return (
         <div className="selecBoxStyle">
-            <Combobox
-                items={props.loadData}
-                onChange={selectBoxHandler}
-                placeholder={props.name}
-
-            />
+            <FormField label ={props.label}> 
+                <Combobox
+                    items={props.loadData}
+                    onChange={selectBoxHandler}
+                    placeholder={props.name}
+                 />
+            </FormField>
         </div>
        
     )

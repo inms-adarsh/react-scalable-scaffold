@@ -8,7 +8,7 @@ import reducer from '../store/reducers';
 import MovieCard from './MovieCard'
 import history from 'history.js';
 import { TextInputField, SearchInput } from 'evergreen-ui';
-
+import SimpleForm from '../../../components/forms/SimpleForm';
 import './movies.scss';
 
 class MoviesList extends Component {
@@ -46,7 +46,9 @@ class MoviesList extends Component {
 
         return (
             <div className="movies">
-                <SearchInput
+                <SimpleForm />
+                {/* uncomment this to see old code */}
+                {/* <SearchInput
                     isInvalid={false}
                     required
                     label="A required text input field"
@@ -85,7 +87,7 @@ class MoviesList extends Component {
                     </div>
                 ) : (
                         <div className="no-movies"><label>No movies found</label></div>
-                    )}
+                    )} */}
             </div>
         );
     }
