@@ -80,7 +80,8 @@ export default class SimpleForm extends React.Component {
               <InputBox name="zip" label="Zip Code" required />
             </div>
             <br />
-            <CheckBox name="saveAsLoc" items={ENTER_ADD_CHECK} checked={true} />
+            <CheckBox name="saveAsLoc" 
+            items={ENTER_ADD_CHECK} checked={true} />
 
           </div>
           <button type="submit" disabled={!this.state.canSubmit}>
